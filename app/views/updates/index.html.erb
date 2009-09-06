@@ -1,0 +1,23 @@
+<div class="span-22 prepend-1 append-1">
+<div id="spacer">
+</div>
+<h1>Updates</h1>
+<br />
+<% for update in @updates %>
+	<div id="showlinks">
+		<%=h nice_date (update.created_at) %><br />
+    <%=h update.post %>
+		<% if logged_in? &&  if current_user.has_role? 'admin' %>	
+    <%= link_to 'Show', update %>
+    <%= link_to 'Edit', edit_update_path(update) %>
+    <%= link_to 'Destroy', update, :confirm => 'Are you sure?', :method => :delete %>
+		<% end %><% end %>
+<br />
+		</div>
+<% end %>
+
+<br />
+<% if logged_in? &&  if current_user.has_role? 'admin' %>	
+	<%= link_to 'New update', new_update_path %>
+<% end %><% end %>
+</div>

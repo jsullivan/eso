@@ -1,0 +1,12 @@
+<h1>Editing poster</h1>
+
+<% form_for(@poster) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @poster %> |
+<%= link_to 'Back', posters_path %>

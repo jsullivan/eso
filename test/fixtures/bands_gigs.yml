@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  band_id: 1
+  gig_id: 1
+
+two:
+  band_id: 1
+  gig_id: 1

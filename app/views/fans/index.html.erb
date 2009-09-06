@@ -1,0 +1,29 @@
+<div class="span-22 prepend-1 append-1">
+<div id="spacer">
+</div>
+<h1>Listing fans</h1>
+
+<table>
+  <tr>
+    <th>Email</th>
+    <th>First</th>
+    <th>Last</th>
+    <th>Phone</th>
+  </tr>
+
+<% for fan in @fans %>
+  <tr>
+    <td><%=h fan.email %></td>
+    <td><%=h fan.first %></td>
+    <td><%=h fan.last %></td>
+    <td><%=h fan.phone %></td>
+    <td><%= link_to 'Show', fan %></td>
+    <td><%= link_to 'Edit', edit_fan_path(fan) %></td>
+    <td><%= link_to 'Destroy', fan, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New fan', new_fan_path %>

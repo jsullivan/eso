@@ -1,0 +1,30 @@
+<div class="span-22 prepend-1 append-1">
+
+<div id="spacer">
+</div>
+<%= @map.div(:width => 871, :height => 400) %>
+
+<p>
+  <b>Date:</b>
+  <%=h @gig.date %>
+</p>
+
+<p>
+  <b>Cost:</b>
+  <%=h @gig.cost %>
+</p>
+
+<p>
+  <b>Venue:</b>
+  <%=h @gig.venue_id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @gig.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_gig_path(@gig) %> |
+<%= link_to 'Back', gigs_path %>
+</div>

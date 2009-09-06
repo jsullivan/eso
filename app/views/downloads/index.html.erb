@@ -1,0 +1,63 @@
+<div class="span-22 prepend-1 append-1">
+
+<table>
+	<% for download in @downloads %>
+ 		<tr>
+  		<td><%= link_to 'Show', download %></td>
+  		<td><%= link_to 'Edit', edit_download_path(download) %></td>
+  		<td><%= link_to 'Destroy', download, :confirm => 'Are you sure?', :method => :delete %></td>
+ 		</tr>
+	<% end %>
+</table>
+<br />
+
+<!--<%= link_to 'New download', new_download_path %><br />-->
+
+<table width="100%">
+	<tr>
+		<td valign="top" width="285">
+			<%= link_to (image_tag 'mcmen_dld_1.png'), '../download_stuff/live_at_father_lukes.zip' %> 
+		</td>
+		<td>
+			<span class="orange">FREE!</span> <h1>Live at Father Luke's, 07/22/09</h1><br />
+			<div id="showlinks">
+				1. D Delay Jam 5:24<br />
+				2. Orange 6:00<br />
+				3. Big Bang 5:51<br />
+				4. Escalation 7:31<br />
+				5. Read Between the Lions 7:24<br />
+				6. La Belleza 12:54<br />
+				
+			</div>
+			<p align="right"><%= link_to 'DOWNLOAD ALBUM!', '/downloads/downloads/email'%></p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<hr>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" width="285">
+			<%= link_to (image_tag 'big_bang.png'), 'http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?id=314292030&s=143441' %> 
+		</td>
+		<td>
+			<h1>Big Bang</h1><br />
+			<div id="showlinks">
+				1. Pre 1:23<br />
+				2. Big Bang 4:35<br />
+				3. Escalation 5:57<br />
+				4. Read Between the Lions 11:51<br />
+				5. Pandaimon 4:41<br />
+				6. Cornea 6:17<br />
+				7. So It Goes 8:50<br />
+				8. Post 1:37<br />
+				9. Pandemonium 20:04<br />
+				
+			</div>
+			<p align="right"><%= link_to 'DOWNLOAD ALBUM!', 'http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?id=314292030&s=143441'%></p>
+		</td>
+	</tr>
+
+</table>	
+</div>

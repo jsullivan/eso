@@ -1,0 +1,23 @@
+<p>
+  <b>Email:</b>
+  <%=h @fan.email %>
+</p>
+
+<p>
+  <b>First:</b>
+  <%=h @fan.first %>
+</p>
+
+<p>
+  <b>Last:</b>
+  <%=h @fan.last %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @fan.phone %>
+</p>
+
+
+<%= link_to 'Edit', edit_fan_path(@fan) %> |
+<%= link_to 'Back', fans_path %>

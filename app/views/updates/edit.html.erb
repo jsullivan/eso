@@ -1,0 +1,19 @@
+<div class="span-22 prepend-1 append-1">
+
+<h1>Editing update</h1>
+
+<% form_for(@update) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :post %><br />
+    <%= f.text_area :post %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @update %> |
+<%= link_to 'Back', updates_path %>
+</div>

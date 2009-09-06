@@ -1,0 +1,28 @@
+<div class="span-22 prepend-1 append-1">
+<div id="spacer">
+</div>
+<h1>Upcoming Shows</h1>
+<hr>
+
+<% for gig in @gigs %>
+<div id="showlinks">
+
+    <%=h gig.date %>
+    <%=h gig.cost %>
+    <%=h gig.venue_id %>
+    <%=h gig.description %>
+		<% if logged_in? &&  if current_user.has_role? 'admin' %>	
+    <%= link_to 'Show', gig %>
+    <%= link_to 'Edit', edit_gig_path(gig) %>
+    <%= link_to 'Destroy', gig, :confirm => 'Are you sure?', :method => :delete %>
+		<% end %><% end %>
+ 
+</div>
+<% end %>
+
+
+<br />
+<% if logged_in? &&  if current_user.has_role? 'admin' %>	
+<%= link_to 'New gig', new_gig_path %>
+<% end %><% end %>
+</div>

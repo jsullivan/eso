@@ -1,0 +1,121 @@
+
+<div class="span-14 prepend-1 append-1">
+	<div id="spacer">
+	</div>
+	<%= image_tag 'bandpic.jpg' %>
+
+	<div id="spacer">
+	</div>
+	<h1>UPDATES</h1>	
+	<hr>
+	
+<!-- UPDATES FROM DB GO HERE -->
+<div id="showlinks">
+	<% for update in @updates %>
+		<i><%= nice_date (update.created_at) %></i><br />
+		<%= update.post %>
+		<br /><br />
+	<% end %>
+
+	<%= link_to 'MORE UPDATES...', :controller => 'updates' %>
+</div>
+	<div id="spacer">
+	</div>
+	<div id="headers">
+		<h1>PRAISE</h1>	
+	</div>
+	<hr>
+
+	<div id="showlinks">
+	<!-- PRAISE COPY FROM DB GOES HERE -->
+	"Together, the quartet unleashed a flood of creativity, playing stuff that sounded like the soundtrack to space exploration, and other stuff that sounded like the Oompa Loompa song re-written for the year 3000."<br />
+	"It was hard not to keep my jaw off the floor." <br />
+	"I couldn’t help feel like I had watched something special." <br />
+	<i>Ben Salmon - Frequency Blog/GO! Magazine</i><br /><br />
+
+	"This is the soundtrack space scope narrative that fits at least one of your memorable REM stints in wonderland."<br />
+	<i>Mosley Wotta</i><br /><br />
+
+	"ESO hangs its hat on spandex-tight numbers that are remarkably scripted with each change meticulously crafted and locked into the band’s collective memory."<br />
+	<i>Mike Bookey - The Source Weekly</i><br /><br />
+	</div>
+	
+	<!-- <%= link_to 'MORE PRAISE' %> -->
+	
+	<div id="spacer">
+	</div>
+	<div id="welcome_photo">
+		<object width="560" height="340"><param name="movie" value="http://www.youtube.com/v/JPPW-5U5Y1Q&hl=en&fs=1&rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/JPPW-5U5Y1Q&hl=en&fs=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed></object>
+	</div>
+	<br />
+	<%= link_to 'MORE VIDEOS', 'http://www.youtube.com/EmptySpaceOrchestra' %>
+</div>
+
+<div class="span-7 append-1 last">
+	<div id="headers">
+		<h1>SHOWS</h1>	
+	</div>
+	<hr>
+	<div id="showlinks" class="showlinks">
+		<%= link_to 'September 18, Eugene', 'http://music.myspace.com/index.cfm?fuseaction=music.showDetails&friendid=371956195&Band_Show_ID=38545256' %><br />		
+		<%= link_to 'September 26, Bend', 'http://music.myspace.com/index.cfm?fuseaction=music.showDetails&friendid=371956195&Band_Show_ID=38541786' %><br />
+		<%= link_to 'October 31, Bend', 'http://music.myspace.com/index.cfm?fuseaction=music.showDetails&friendid=371956195&Band_Show_ID=38550553' %><br />
+		<%= link_to 'November 20, Bend', 'http://music.myspace.com/index.cfm?fuseaction=music.showDetails&friendid=371956195&Band_Show_ID=38548484' %><br />
+	
+	<%= link_to 'SEE ALL SHOWS', :controller => 'gigs', :action => "index" %>
+	</div>
+	
+	<div id="spacer">
+	</div>
+	<div id="headers">
+		<h1>GET BIG BANG</h1>	
+	</div>
+	<hr>
+	<%= link_to (image_tag 'big_bang.png'), 'http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?id=314292030&s=143441' %>
+	<br />
+	<%= link_to 'DOWNLOAD NOW', 'http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?id=314292030&s=143441' %>
+	<div id="spacer">
+	</div>
+	<div id="headers">
+		<h1>POSTERS</h1>	
+	</div>
+	<hr>
+	<%= link_to (image_tag 'poster.png'), :controller => 'posters' %>
+	<br />
+	<%= link_to 'SEE ALL POSTERS', :controller => 'posters' %>
+	<div id="spacer">
+	</div>
+	<div id="headers">
+		<h1>JOIN</h1>	
+	</div>
+	<hr>
+	<div id="showlinks">
+	
+	Join the Empty Space Orchestra mailing list and get show reminders, discounts, a chance to win free merchandise, and more!<br />
+	<%= link_to 'JOIN FOR FREE!', :controller => 'fans', :action => 'new'%>
+	</div>
+	<div id="spacer">
+	</div>
+	
+<!--	
+	<div id="headers">
+		<h1>FRIENDS</h1>	
+	</div>
+	<div id="green_rule">
+	</div>
+		<%= link_to 'Mosley Wotta' %><br />
+		<%= link_to 'The Mostest' %><br />
+		<%= link_to 'Person People'%><br />
+		<%= link_to 'MORE...'%><br />
+		
+	<div id="spacer">
+	</div>
+-->
+
+	<div id="headers">
+		<h1>PLUG IN</h1>	
+	</div>
+	<hr>
+	<%= link_to (image_tag 'twitter.png'), 'http://twitter.com/ESOrchestra' %>&nbsp; <%= link_to (image_tag 'myspace.png'), 'http://www.myspace.com/esorchestra' %>&nbsp; <%= link_to (image_tag 'facebook.png'), 'http://www.facebook.com/pages/Empty-Space-Orchestra/80744871179'%>&nbsp; <%= link_to (image_tag  'youtube.png'), 'http://www.youtube.com/EmptySpaceOrchestra'%>
+</div>
+

@@ -1,0 +1,79 @@
+<div class="span-22 prepend-1 append-1 last">
+	<div id="spacer">
+	</div>
+	<h1>Hi-res images</h1>
+	<hr>
+	<div id="showlinks_alt_padding">
+		<table width="100%">
+			<tr>
+				<td>
+					<%= link_to (image_tag 'press_photo_1.png'), '/download_stuff/sunset.jpg' %> 
+				</td>	
+				<td>
+					<%= link_to ( image_tag 'press_photo_2.png'), '/download_stuff/B&W.jpg' %> 
+				</td>
+				<td>
+					<%= link_to (image_tag 'press_photo_3.png'), '/download_stuff/live.jpg' %>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<%= link_to 'Download Sunset image', '/download_stuff/sunset.jpg' %> 	
+				</td>
+				<td>
+					<%= link_to 'Download B&W image', '/download_stuff/B&W.jpg' %>
+				</td>
+				<td>
+					<%= link_to 'Download Live image', '/download_stuff/live.jpg' %>
+				</td>
+			</tr>
+		</table>
+	</div>
+	</div>
+
+	<div class="span-8 prepend-1 append-1">
+		<div id="spacer">
+		</div>
+		<h1>Posters</h1>
+		<hr>
+		<div id="showlinks">
+			<%= link_to (image_tag 'poster.png'), :controller => 'posters' %><br />
+			<%= link_to 'SEE MORE POSTERS', :controller => 'posters' %>
+		</div>
+	</div>
+	<div class="span-13 append-1 last">
+		<div id="spacer">
+		</div>
+		<h1>Contact</h1>
+		<hr>
+		<div id="showlinks">
+			<span class="orange">
+				Want to Book Empty Space Orchestra?<br/>
+			</span>
+			<span class="book">
+			<%= link_to 'Click here.', 'mailto:Booking@EmptySpaceOrchestra.com'%>
+			</span>
+			<div id="spacer">
+			</div>
+			<span class="orange">
+				Want to contact the band?<br/>
+			</span>
+			<span class="book">
+			<%= link_to 'Click here.', 'mailto:Info@EmptySpaceOrchestra.com'%>
+			</span>
+		</div>
+	
+		<div class="span-13 append-1 last">
+			<div id="spacer">
+			</div>
+			<h1>Praise</h1>
+			<hr>
+			<div id="showlinks">
+				"This is the soundtrack space scope narrative that fits at least one of your memorable REM stints in wonderland."<br />
+				<i>Mosley Wotta</i><br /><br />
+
+				"ESO hangs its hat on spandex-tight numbers that are remarkably scripted with each change meticulously crafted and locked into the band’s collective memory."<br />
+				<i>Mike Bookey - The Source Weekly</i><br />
+			</div>
+			</div>
+	</div>

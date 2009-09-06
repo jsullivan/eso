@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2009-07-08 10:52:29
+  cost: 1
+  venue_id: 1
+  description: MyText
+
+two:
+  date: 2009-07-08 10:52:29
+  cost: 1
+  venue_id: 1
+  description: MyText

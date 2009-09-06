@@ -1,0 +1,36 @@
+<div class="span-22 prepend-1 append-1">
+<div id="spacer">
+</div>
+<h1>Join the mailing list</h1>
+<br />
+<% form_for(@fan) do |f| %>
+  <%= f.error_messages %>
+<div id="showlinks">
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+</div>
+<div id="showlinks">
+  <p>
+    <%= f.label :first %><br />
+    <%= f.text_field :first %>
+  </p>
+  <p>
+    <%= f.label :last %><br />
+    <%= f.text_field :last %>
+  </p>
+</div>
+<div id="showlinks">
+  <p>
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </p>
+  <p>
+</div>
+    <%= f.submit "Submit" %> or <%= link_to 'Cancel',:controller => 'welcome'%>
+  </p>
+<% end %>
+
+
+</div>

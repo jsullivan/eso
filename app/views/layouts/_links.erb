@@ -1,0 +1,25 @@
+<div class="span-24 last">
+	<!--[if IE]>
+	<div style="margin-top: 24px;">
+	</div>
+	<![endif]-->
+
+	<div id="header_links">
+		<%= link_to 'Home', '/', :class => is_active?("welcome")%>
+	<!--	<%= link_to 'Shows', '/gigs', :class => is_active?("gigs")%> -->
+		<%= link_to 'Downloads', '/downloads', :class => is_active?("downloads")%>
+		<%= link_to 'Photos', '/photos', :class => is_active?("photos")%>
+	<!--	<%= link_to 'Videos', '/videos', :class => is_active?("videos")%> -->
+		<%= link_to 'Press', '/press', :class => is_active?("presses")%>
+		<%= link_to 'Join', '/fans/new',  :class => is_active?("fans") %>
+		<% if logged_in? &&  if current_user.has_role? 'admin' %>	
+		<%= link_to 'Logout', '/account/logout'%>
+		
+		<% end %><% end%>
+  	&nbsp;
+		<%= link_to (image_tag 'twitter_small.png'), 'http://twitter.com/ESOrchestra' %>&nbsp;
+		<%= link_to (image_tag 'myspace_small.png'), 'http://www.myspace.com/esorchestra' %>&nbsp; 
+		<%= link_to (image_tag 'facebook_small.png'), 'http://www.facebook.com/pages/Empty-Space-Orchestra/80744871179'%>&nbsp; 
+		<%= link_to (image_tag  'youtube_small.png'), 'http://www.youtube.com/EmptySpaceOrchestra'%>
+	</div>
+</div>

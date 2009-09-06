@@ -1,0 +1,19 @@
+<div class="span-22 prepend-1 append-1">
+<div id="spacer">
+</div>
+<h1>New update</h1>
+<div id="showlinks">
+<% form_for(@update) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :post %><br />
+    <%= f.text_area :post %>
+  </p>
+  <p>
+    <%= f.submit "Create" %> or <%= link_to 'Cancel', :controller => 'updates'%>
+  </p>
+<% end %>
+</div>
+</div>
+

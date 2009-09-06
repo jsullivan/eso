@@ -1,0 +1,127 @@
+
+/* GENERAL
+================================*/
+#spacer {
+	height: 30px;
+	width: 100;
+}
+#green_rule {
+	width: 100%;
+	border: 1px solid #ffffff;
+	margin-bottom: 10px;
+}
+hr {
+color: #ffffff;
+height: 1px;
+}
+.orange {
+	color: orange;
+	font-size: 24px;
+}
+.book a{
+	color: white;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 100%;
+	padding-left: 10px;
+}
+.book a:hover {
+	color: orange;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 100%;
+	padding-left: 10px;
+}
+/* HEADER 
+================================*/
+#header_links {
+	text-align: right;
+	background: #222222;
+	padding-right: 20px;
+	padding-top: 4px;
+	padding-bottom: 2px;
+}
+.active {
+	color: white;
+	background: orange;
+	font-weight: bold;
+	font-size: 100%;
+	text-decoration: none;
+	padding: 5px 10px 5px 10px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+}
+.inactive {
+	color: white;
+	background: #000000;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 100%;
+	padding: 5px 10px 5px 10px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+}
+#sub_banner {
+	/*background: url('/images/sub_banner.jpg');*/
+	height: 111px;
+}
+#banner {
+	background: url('/images/banner3.jpg');
+	height: 363px;
+}
+
+/* MAIN
+================================*/
+
+#welcome_photo {
+	margin-top: 5px;
+}
+#headers {
+	margin-top: 10px;
+}
+
+/* SIDEBAR
+================================*/
+#showlinks {
+	padding: 10px 5px 10px 5px;
+	background-color: #111111;
+	margin-bottom: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#showlinks_alt_padding {
+	padding: 10px 0px 10px 20px;
+	background-color: #111111;
+	margin-bottom: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.showlinks a {
+	color: orange;
+	font-size: 20px;
+	padding: 0px 5px 0px 5px;
+}
+.showlinks a:hover {
+	color: #ffffff;
+}
+.dark_gray {
+	background: url('/images/container.jpg');
+}
+
+/* JOIN
+================================*/
+#joinbox {
+	width: 100%;
+	height: 50;
+}
+
+/* FOOTER
+================================*/
+#footer {
+	width: 100%;
+	padding: 30px 0px 20px 0px;
+	text-align: center;
+	background: #111111;
+}

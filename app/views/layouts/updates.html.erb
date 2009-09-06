@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Empty Space Orchestra - Updates</title>
+	<%= render :partial => "layouts/stylesheets" %>
+</head>
+<body>
+
+<p style="color: green"><%= flash[:notice] %></p>
+
+<div class="container dark_gray">
+	<%= render :partial => "layouts/links" %>
+	<div class="span-24 last">
+		<div id="sub_banner">
+			<%= link_to (image_tag 'sub_banner.jpg'), :controller => 'welcome' %>
+		</div>
+	</div>
+	<%= yield  %>
+	<div class="span-24 last">
+		<div id="spacer">
+		</div>
+		<div id="joinbox">	
+		</div>
+	</div>
+	<div class="span-24 last">
+	<%= render :partial => "layouts/footer" %>
+	</div>
+</div>
+<div id="spacer">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<div class="span-22 prepend-1 append-1">
+<div id="spacer">
+</div>
+<% form_tag :action => 'email_submit' do %>
+<div id="showlinks">
+	<span class="orange">Enter your email to download the free album!</span>
+	<div id="spacer">
+	</div>
+    Email address: <%= text_field_tag 'address' %>
+  </p>
+    <%= submit_tag "Submit" %> or <%= link_to 'Cancel',:controller => 'welcome'%>
+		<% end %>
+  </p>
+</div>
+</div>
